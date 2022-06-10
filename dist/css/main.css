@@ -274,9 +274,11 @@ h3 {
 /* About Me */
 .about-me {
   max-width: 900px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
   .about-me__img {
-    box-shadow: var(--bxsh); }
+    box-shadow: var(--bxsh);
+    margin: 0 auto; }
 
 /* My Work */
 .my-work {
@@ -288,7 +290,7 @@ h3 {
 
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   max-width: 950px;
   margin: 0 auto;
   column-gap: 3em;
@@ -301,7 +303,8 @@ h3 {
     color: var(--clr-text);
     text-decoration: none;
     box-shadow: var(--bxsh);
-    border-radius: 5px; }
+    border-radius: 5px;
+    max-width: 307px; }
     .portfolio__item:focus, .portfolio__item:hover {
       position: relative;
       z-index: 2; }

@@ -379,9 +379,10 @@ h3 {
 .about-me {
   max-width: 900px;
   margin: 0 auto;
-
+  text-align: center;
   &__img {
     box-shadow: var(--bxsh);
+    margin: 0 auto;
   }
 }
 
@@ -399,7 +400,7 @@ h3 {
 
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   max-width: 950px;
   margin: 0 auto;
   column-gap: 3em;
@@ -414,6 +415,7 @@ h3 {
     text-decoration: none;
     box-shadow: var(--bxsh);
     border-radius: 5px;
+    max-width: 307px;
 
     &:focus,
     &:hover {
