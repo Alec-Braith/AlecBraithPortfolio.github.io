@@ -11,9 +11,5 @@
   "license": "ISC",
   "dependencies": {
     "node-sass": "^7.0.1"
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0",
-    "push-dir": "^0.4.1"
   }
 }
