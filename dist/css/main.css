@@ -434,7 +434,8 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 200px;
     grid-template-areas: "title img" "subtitle img" "text img";
-    column-gap: 2em; }
+    column-gap: 2em;
+    text-align: left; }
     .about-me__img {
       grid-area: img;
       position: relative;
