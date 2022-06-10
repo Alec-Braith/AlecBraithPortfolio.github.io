@@ -1,0 +1,163 @@
+/*DESKTOP*/
+
+@media (min-width: 950px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+    --fs-nav: 1rem;
+  }
+
+  .section__title--intro {
+    text-align: left;
+  }
+
+  /*navbar*/
+  .hamburger,
+  .nav-toggle {
+    visibility: hidden;
+  }
+
+  .nav {
+    height: inherit;
+    width: inherit;
+    position: fixed;
+    top: 0px;
+    padding: 0 30px;
+    align-items: flex-end;
+    transform: none;
+
+    &__list {
+      float: right;
+      flex-direction: row;
+      padding: 10px 20px;
+      margin: 0 5px;
+      align-items: center;
+    }
+
+    &__item {
+      padding-right: 2em;
+      font-size: var(--fs-nav);
+    }
+  }
+
+  /*intro*/
+
+  .intro {
+    display: grid;
+    width: min-content;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+
+    column-gap: 1em;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+    grid-template-columns: min-content max-content;
+
+    &__img {
+      grid-area: img;
+      min-width: 250px;
+      position: relative;
+      z-index: 3;
+    }
+  }
+
+  .section {
+    &__subtitle {
+      align-self: start;
+      grid-column: -1/1;
+      grid-row: 2;
+      position: relative;
+      width: calc(100% + 9em);
+      left: -4.5em;
+      text-align: right;
+      max-width: 950px;
+
+      &--intro {
+        padding-right: 3.5em;
+      }
+    }
+  }
+
+  /*services*/
+
+  .container {
+    max-width: 950px;
+    margin: 0 auto;
+
+    .services {
+      .service {
+        display: grid;
+        grid-auto-columns: 2fr;
+
+        grid-template-areas:
+          "title img"
+          "text img";
+        &--reverse {
+          grid-template-areas:
+            "img title"
+            "img text";
+        }
+        max-width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+        column-gap: 5em;
+      }
+      i {
+        grid-area: img;
+      }
+    }
+  }
+
+  /* about me */
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas:
+      "title img"
+      "subtitle img"
+      "text img";
+    column-gap: 2em;
+
+    &__img {
+      grid-area: img;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .section {
+    &__title--about {
+      grid-area: title;
+      text-align: left;
+    }
+
+    &__subtitle--about {
+      grid-column: 1/-1;
+      grid-row: 2;
+      position: relative;
+      left: -1em;
+      width: calc(100% + 2em);
+
+      padding-right: calc(200px + 4em);
+      text-align: left;
+    }
+  }
+
+  /*portfolio*/
+  .portfolio {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+      "img img img"
+      "img img img";
+
+    &__img {
+      grid-area: img;
+      position: relative;
+    }
+  }
+}
