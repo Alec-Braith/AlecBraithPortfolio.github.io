@@ -233,7 +233,8 @@ h3 {
 
 .hamburger {
   display: block;
-  position: relative;
+  position: fixed;
+  right: 1em;
 }
 
 .hamburger,
